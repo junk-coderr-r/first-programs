@@ -33,3 +33,7 @@ if x==3:
         print(area)
         exit()
     parallelogram()
+
+if x>3 or x <= 0:
+        print("Invalid input, please retry.")
+        exit()
