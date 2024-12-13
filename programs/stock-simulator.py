@@ -91,7 +91,7 @@ def sellmenu():
         else: print("Nothing to sell!")
         buymenu()
     if selection == 3:
-        if owned_apple >= 0:
+        if owned_apple >= 1:
             money += apple_price
             x = apple_price
             ran = random.randint(10, 25)
@@ -102,6 +102,7 @@ def sellmenu():
             apple_price = x
             owned_apple -= 1
         else: print("Nothing to sell!")
+        buymenu()
     if selection >= 4 or selection <= 0:
         print("Invalid input, please retry.")
         buymenu()
